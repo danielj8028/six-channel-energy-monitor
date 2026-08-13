@@ -1,0 +1,379 @@
+[18:36:39.723][S][sensor]: 'energy_meter Volts A' >> 122.5 V
+[18:36:39.724][S][sensor]: 'energy_meter CT1 Amps' >> 0.00 A
+[18:36:39.724][S][sensor]: 'energy_meter CT1 Watts' >> 0.01 W
+[18:36:39.725][S][sensor]: 'energy_meter CT1 Power Factor' >> 0.04 
+[18:36:39.725][S][sensor]: 'energy_meter CT1 Reactive Power' >> -0.0 var
+[18:36:39.725][S][sensor]: 'energy_meter CT1 Apparent Power' >> 0.2 VA
+[18:36:39.725][S][sensor]: 'energy_meter CT2 Amps' >> 0.00 A
+[18:36:39.725][S][sensor]: 'energy_meter CT2 Watts' >> -0.01 W
+[18:36:39.725][S][sensor]: 'energy_meter CT2 Power Factor' >> -0.04 
+[18:36:39.725][S][sensor]: 'energy_meter CT2 Reactive Power' >> -0.0 var
+[18:36:39.725][S][sensor]: 'energy_meter CT2 Apparent Power' >> 0.2 VA
+[18:36:39.726][S][sensor]: 'energy_meter CT3 Amps' >> 0.00 A
+[18:36:39.726][S][sensor]: 'energy_meter CT3 Watts' >> -0.01 W
+[18:36:39.726][S][sensor]: 'energy_meter CT3 Power Factor' >> -0.03 
+[18:36:39.726][S][sensor]: 'energy_meter CT3 Reactive Power' >> 0.0 var
+[18:36:39.726][S][sensor]: 'energy_meter CT3 Apparent Power' >> 0.2 VA
+[18:36:39.726][S][sensor]: 'energy_meter Freq A' >> 60.0 Hz
+[18:36:46.356][S][sensor]: 'energy_meter CT4 Amps' >> 0.00 A
+[18:36:46.357][S][sensor]: 'energy_meter CT4 Watts' >> -0.00 W
+[18:36:46.357][S][sensor]: 'energy_meter CT4 Power Factor' >> -0.01 
+[18:36:46.358][S][sensor]: 'energy_meter CT4 Reactive Power' >> -0.0 var
+[18:36:46.358][S][sensor]: 'energy_meter CT4 Apparent Power' >> 0.2 VA
+[18:36:46.358][S][sensor]: 'energy_meter CT5 Amps' >> 0.00 A
+[18:36:46.360][S][sensor]: 'energy_meter CT5 Watts' >> 0.00 W
+[18:36:46.360][S][sensor]: 'energy_meter CT5 Power Factor' >> 0.01 
+[18:36:46.361][S][sensor]: 'energy_meter CT5 Reactive Power' >> -0.0 var
+[18:36:46.361][S][sensor]: 'energy_meter CT5 Apparent Power' >> 0.2 VA
+[18:36:46.362][S][sensor]: 'energy_meter CT6 Amps' >> 0.67 A
+[18:36:46.362][S][sensor]: 'energy_meter CT6 Watts' >> 80.30 W
+[18:36:46.363][S][sensor]: 'energy_meter CT6 Power Factor' >> 0.98 
+[18:36:46.363][S][sensor]: 'energy_meter CT6 Reactive Power' >> -15.9 var
+[18:36:46.363][S][sensor]: 'energy_meter CT6 Apparent Power' >> 82.0 VA
+[18:36:46.364][S][sensor]: 'energy_meter Freq B' >> 60.0 Hz
+[18:36:48.706][S][sensor]: 'energy_meter Total Amps' >> 0.67 A
+[18:36:49.444][S][sensor]: 'energy_meter Total kWh' >> 0.065 kWh
+[18:36:49.445][S][sensor]: 'energy_meter Total Watts' >> 80.3 W
+[18:36:49.445][S][sensor]: 'energy_meter Volts A' >> 122.6 V
+[18:36:49.446][S][sensor]: 'energy_meter CT1 Amps' >> 0.00 A
+[18:36:49.449][S][sensor]: 'energy_meter CT1 Watts' >> 0.00 W
+[18:36:49.450][S][sensor]: 'energy_meter CT1 Power Factor' >> 0.00 
+[18:36:49.450][S][sensor]: 'energy_meter CT1 Reactive Power' >> 0.0 var
+[18:36:49.450][S][sensor]: 'energy_meter CT1 Apparent Power' >> 0.2 VA
+[18:36:49.450][S][sensor]: 'energy_meter CT2 Amps' >> 0.00 A
+[18:36:49.450][S][sensor]: 'energy_meter CT2 Watts' >> -0.00 W
+[18:36:49.450][S][sensor]: 'energy_meter CT2 Power Factor' >> -0.01 
+[18:36:49.450][S][sensor]: 'energy_meter CT2 Reactive Power' >> 0.0 var
+[18:36:49.451][S][sensor]: 'energy_meter CT2 Apparent Power' >> 0.2 VA
+[18:36:49.451][S][sensor]: 'energy_meter CT3 Amps' >> 0.00 A
+[18:36:49.451][S][sensor]: 'energy_meter CT3 Watts' >> 0.00 W
+[18:36:49.451][S][sensor]: 'energy_meter CT3 Power Factor' >> 0.02 
+[18:36:49.451][S][sensor]: 'energy_meter CT3 Reactive Power' >> 0.0 var
+[18:36:49.451][S][sensor]: 'energy_meter CT3 Apparent Power' >> 0.2 VA
+[18:36:49.451][S][sensor]: 'energy_meter Freq A' >> 60.0 Hz
+[18:36:56.271][S][sensor]: 'energy_meter CT4 Amps' >> 0.00 A
+[18:36:56.272][S][sensor]: 'energy_meter CT4 Watts' >> 0.01 W
+[18:36:56.272][S][sensor]: 'energy_meter CT4 Power Factor' >> 0.03 
+[18:36:56.272][S][sensor]: 'energy_meter CT4 Reactive Power' >> -0.0 var
+[18:36:56.272][S][sensor]: 'energy_meter CT4 Apparent Power' >> 0.2 VA
+[18:36:56.273][S][sensor]: 'energy_meter CT5 Amps' >> 0.00 A
+[18:36:56.273][S][sensor]: 'energy_meter CT5 Watts' >> -0.00 W
+[18:36:56.273][S][sensor]: 'energy_meter CT5 Power Factor' >> -0.02 
+[18:36:56.273][S][sensor]: 'energy_meter CT5 Reactive Power' >> 0.0 var
+[18:36:56.274][S][sensor]: 'energy_meter CT5 Apparent Power' >> 0.2 VA
+[18:36:56.274][S][sensor]: 'energy_meter CT6 Amps' >> 0.67 A
+[18:36:56.274][S][sensor]: 'energy_meter CT6 Watts' >> 80.06 W
+[18:36:56.274][S][sensor]: 'energy_meter CT6 Power Factor' >> 0.98 
+[18:36:56.275][S][sensor]: 'energy_meter CT6 Reactive Power' >> -15.9 var
+[18:36:56.276][S][sensor]: 'energy_meter CT6 Apparent Power' >> 81.7 VA
+[18:36:56.276][S][sensor]: 'energy_meter Freq B' >> 60.0 Hz
+[18:36:58.709][S][sensor]: 'energy_meter Total Amps' >> 0.67 A
+[18:36:59.238][S][sensor]: 'energy_meter WiFi' >> -53 dBm
+[18:36:59.440][S][sensor]: 'energy_meter Total kWh' >> 0.065 kWh
+[18:36:59.440][S][sensor]: 'energy_meter Total Watts' >> 80.1 W
+[18:36:59.441][S][sensor]: 'energy_meter Volts A' >> 122.6 V
+[18:36:59.441][S][sensor]: 'energy_meter CT1 Amps' >> 0.00 A
+[18:36:59.441][S][sensor]: 'energy_meter CT1 Watts' >> 0.00 W
+[18:36:59.441][S][sensor]: 'energy_meter CT1 Power Factor' >> 0.02 
+[18:36:59.442][S][sensor]: 'energy_meter CT1 Reactive Power' >> -0.0 var
+[18:36:59.442][S][sensor]: 'energy_meter CT1 Apparent Power' >> 0.2 VA
+[18:36:59.443][S][sensor]: 'energy_meter CT2 Amps' >> 0.00 A
+[18:36:59.443][S][sensor]: 'energy_meter CT2 Watts' >> -0.01 W
+[18:36:59.443][S][sensor]: 'energy_meter CT2 Power Factor' >> -0.03 
+[18:36:59.443][S][sensor]: 'energy_meter CT2 Reactive Power' >> -0.0 var
+[18:36:59.444][S][sensor]: 'energy_meter CT2 Apparent Power' >> 0.2 VA
+[18:36:59.444][S][sensor]: 'energy_meter CT3 Amps' >> 0.00 A
+[18:36:59.444][S][sensor]: 'energy_meter CT3 Watts' >> 0.00 W
+[18:36:59.444][S][sensor]: 'energy_meter CT3 Power Factor' >> 0.02 
+[18:36:59.444][S][sensor]: 'energy_meter CT3 Reactive Power' >> -0.0 var
+[18:36:59.445][S][sensor]: 'energy_meter CT3 Apparent Power' >> 0.2 VA
+[18:36:59.445][S][sensor]: 'energy_meter Freq A' >> 60.0 Hz
+[18:37:06.276][S][sensor]: 'energy_meter CT4 Amps' >> 0.00 A
+[18:37:06.276][S][sensor]: 'energy_meter CT4 Watts' >> 0.00 W
+[18:37:06.276][S][sensor]: 'energy_meter CT4 Power Factor' >> 0.01 
+[18:37:06.276][S][sensor]: 'energy_meter CT4 Reactive Power' >> -0.0 var
+[18:37:06.276][S][sensor]: 'energy_meter CT4 Apparent Power' >> 0.2 VA
+[18:37:06.277][S][sensor]: 'energy_meter CT5 Amps' >> 0.00 A
+[18:37:06.277][S][sensor]: 'energy_meter CT5 Watts' >> 0.00 W
+[18:37:06.277][S][sensor]: 'energy_meter CT5 Power Factor' >> 0.02 
+[18:37:06.277][S][sensor]: 'energy_meter CT5 Reactive Power' >> -0.0 var
+[18:37:06.277][S][sensor]: 'energy_meter CT5 Apparent Power' >> 0.2 VA
+[18:37:06.277][S][sensor]: 'energy_meter CT6 Amps' >> 0.67 A
+[18:37:06.277][S][sensor]: 'energy_meter CT6 Watts' >> 80.52 W
+[18:37:06.277][S][sensor]: 'energy_meter CT6 Power Factor' >> 0.98 
+[18:37:06.277][S][sensor]: 'energy_meter CT6 Reactive Power' >> -16.1 var
+[18:37:06.278][S][sensor]: 'energy_meter CT6 Apparent Power' >> 82.2 VA
+[18:37:06.278][S][sensor]: 'energy_meter Freq B' >> 60.0 Hz
+[18:37:08.700][S][sensor]: 'energy_meter Total Amps' >> 0.67 A
+[18:37:09.504][S][sensor]: 'energy_meter Total kWh' >> 0.065 kWh
+[18:37:09.505][S][sensor]: 'energy_meter Total Watts' >> 80.5 W
+[18:37:09.505][S][sensor]: 'energy_meter Volts A' >> 122.5 V
+[18:37:09.506][S][sensor]: 'energy_meter CT1 Amps' >> 0.00 A
+[18:37:09.507][S][sensor]: 'energy_meter CT1 Watts' >> 0.00 W
+[18:37:09.508][S][sensor]: 'energy_meter CT1 Power Factor' >> 0.00 
+[18:37:09.508][S][sensor]: 'energy_meter CT1 Reactive Power' >> 0.0 var
+[18:37:09.509][S][sensor]: 'energy_meter CT1 Apparent Power' >> 0.2 VA
+[18:37:09.509][S][sensor]: 'energy_meter CT2 Amps' >> 0.00 A
+[18:37:09.509][S][sensor]: 'energy_meter CT2 Watts' >> -0.00 W
+[18:37:09.510][S][sensor]: 'energy_meter CT2 Power Factor' >> -0.01 
+[18:37:09.511][S][sensor]: 'energy_meter CT2 Reactive Power' >> 0.0 var
+[18:37:09.511][S][sensor]: 'energy_meter CT2 Apparent Power' >> 0.2 VA
+[18:37:09.511][S][sensor]: 'energy_meter CT3 Amps' >> 0.00 A
+[18:37:09.512][S][sensor]: 'energy_meter CT3 Watts' >> -0.00 W
+[18:37:09.512][S][sensor]: 'energy_meter CT3 Power Factor' >> -0.01 
+[18:37:09.512][S][sensor]: 'energy_meter CT3 Reactive Power' >> -0.0 var
+[18:37:09.512][S][sensor]: 'energy_meter CT3 Apparent Power' >> 0.2 VA
+[18:37:09.512][S][sensor]: 'energy_meter Freq A' >> 60.0 Hz
+[18:37:16.290][S][sensor]: 'energy_meter CT4 Amps' >> 0.00 A
+[18:37:16.294][S][sensor]: 'energy_meter CT4 Watts' >> 0.00 W
+[18:37:16.295][S][sensor]: 'energy_meter CT4 Power Factor' >> 0.00 
+[18:37:16.295][S][sensor]: 'energy_meter CT4 Reactive Power' >> -0.0 var
+[18:37:16.295][S][sensor]: 'energy_meter CT4 Apparent Power' >> 0.2 VA
+[18:37:16.296][S][sensor]: 'energy_meter CT5 Amps' >> 0.00 A
+[18:37:16.296][S][sensor]: 'energy_meter CT5 Watts' >> -0.00 W
+[18:37:16.296][S][sensor]: 'energy_meter CT5 Power Factor' >> -0.00 
+[18:37:16.297][S][sensor]: 'energy_meter CT5 Reactive Power' >> 0.0 var
+[18:37:16.297][S][sensor]: 'energy_meter CT5 Apparent Power' >> 0.2 VA
+[18:37:16.297][S][sensor]: 'energy_meter CT6 Amps' >> 0.67 A
+[18:37:16.298][S][sensor]: 'energy_meter CT6 Watts' >> 80.22 W
+[18:37:16.298][S][sensor]: 'energy_meter CT6 Power Factor' >> 0.98 
+[18:37:16.298][S][sensor]: 'energy_meter CT6 Reactive Power' >> -16.1 var
+[18:37:16.299][S][sensor]: 'energy_meter CT6 Apparent Power' >> 81.9 VA
+[18:37:16.299][S][sensor]: 'energy_meter Freq B' >> 60.0 Hz
+[18:37:18.714][S][sensor]: 'energy_meter Total Amps' >> 0.67 A
+[18:37:19.441][S][sensor]: 'energy_meter Total kWh' >> 0.065 kWh
+[18:37:19.441][S][sensor]: 'energy_meter Total Watts' >> 80.2 W
+[18:37:19.442][S][sensor]: 'energy_meter Volts A' >> 122.6 V
+[18:37:19.442][S][sensor]: 'energy_meter CT1 Amps' >> 0.00 A
+[18:37:19.442][S][sensor]: 'energy_meter CT1 Watts' >> 0.00 W
+[18:37:19.442][S][sensor]: 'energy_meter CT1 Power Factor' >> 0.01 
+[18:37:19.442][S][sensor]: 'energy_meter CT1 Reactive Power' >> -0.0 var
+[18:37:19.442][S][sensor]: 'energy_meter CT1 Apparent Power' >> 0.2 VA
+[18:37:19.442][S][sensor]: 'energy_meter CT2 Amps' >> 0.00 A
+[18:37:19.443][S][sensor]: 'energy_meter CT2 Watts' >> -0.01 W
+[18:37:19.443][S][sensor]: 'energy_meter CT2 Power Factor' >> -0.03 
+[18:37:19.443][S][sensor]: 'energy_meter CT2 Reactive Power' >> 0.0 var
+[18:37:19.443][S][sensor]: 'energy_meter CT2 Apparent Power' >> 0.2 VA
+[18:37:19.443][S][sensor]: 'energy_meter CT3 Amps' >> 0.00 A
+[18:37:19.443][S][sensor]: 'energy_meter CT3 Watts' >> -0.01 W
+[18:37:19.443][S][sensor]: 'energy_meter CT3 Power Factor' >> -0.04 
+[18:37:19.443][S][sensor]: 'energy_meter CT3 Reactive Power' >> -0.0 var
+[18:37:19.443][S][sensor]: 'energy_meter CT3 Apparent Power' >> 0.2 VA
+[18:37:19.444][S][sensor]: 'energy_meter Freq A' >> 60.0 Hz
+[18:37:26.298][S][sensor]: 'energy_meter CT4 Amps' >> 0.00 A
+[18:37:26.299][S][sensor]: 'energy_meter CT4 Watts' >> 0.00 W
+[18:37:26.300][S][sensor]: 'energy_meter CT4 Power Factor' >> 0.01 
+[18:37:26.300][S][sensor]: 'energy_meter CT4 Reactive Power' >> 0.0 var
+[18:37:26.301][S][sensor]: 'energy_meter CT4 Apparent Power' >> 0.2 VA
+[18:37:26.301][S][sensor]: 'energy_meter CT5 Amps' >> 0.00 A
+[18:37:26.302][S][sensor]: 'energy_meter CT5 Watts' >> -0.00 W
+[18:37:26.304][S][sensor]: 'energy_meter CT5 Power Factor' >> -0.01 
+[18:37:26.305][S][sensor]: 'energy_meter CT5 Reactive Power' >> 0.0 var
+[18:37:26.306][S][sensor]: 'energy_meter CT5 Apparent Power' >> 0.2 VA
+[18:37:26.306][S][sensor]: 'energy_meter CT6 Amps' >> 0.67 A
+[18:37:26.306][S][sensor]: 'energy_meter CT6 Watts' >> 80.02 W
+[18:37:26.307][S][sensor]: 'energy_meter CT6 Power Factor' >> 0.98 
+[18:37:26.308][S][sensor]: 'energy_meter CT6 Reactive Power' >> -16.2 var
+[18:37:26.308][S][sensor]: 'energy_meter CT6 Apparent Power' >> 81.8 VA
+[18:37:26.308][S][sensor]: 'energy_meter Freq B' >> 60.0 Hz
+[18:37:28.716][S][sensor]: 'energy_meter Total Amps' >> 0.67 A
+[18:37:29.438][S][sensor]: 'energy_meter Total kWh' >> 0.066 kWh
+[18:37:29.438][S][sensor]: 'energy_meter Total Watts' >> 80.0 W
+[18:37:29.439][S][sensor]: 'energy_meter Volts A' >> 122.6 V
+[18:37:29.439][S][sensor]: 'energy_meter CT1 Amps' >> 0.00 A
+[18:37:29.439][S][sensor]: 'energy_meter CT1 Watts' >> -0.01 W
+[18:37:29.439][S][sensor]: 'energy_meter CT1 Power Factor' >> -0.04 
+[18:37:29.439][S][sensor]: 'energy_meter CT1 Reactive Power' >> -0.0 var
+[18:37:29.440][S][sensor]: 'energy_meter CT1 Apparent Power' >> 0.2 VA
+[18:37:29.440][S][sensor]: 'energy_meter CT2 Amps' >> 0.00 A
+[18:37:29.440][S][sensor]: 'energy_meter CT2 Watts' >> 0.00 W
+[18:37:29.440][S][sensor]: 'energy_meter CT2 Power Factor' >> 0.00 
+[18:37:29.440][S][sensor]: 'energy_meter CT2 Reactive Power' >> 0.0 var
+[18:37:29.441][S][sensor]: 'energy_meter CT2 Apparent Power' >> 0.2 VA
+[18:37:29.441][S][sensor]: 'energy_meter CT3 Amps' >> 0.00 A
+[18:37:29.441][S][sensor]: 'energy_meter CT3 Watts' >> 0.01 W
+[18:37:29.441][S][sensor]: 'energy_meter CT3 Power Factor' >> 0.04 
+[18:37:29.441][S][sensor]: 'energy_meter CT3 Reactive Power' >> 0.0 var
+[18:37:29.442][S][sensor]: 'energy_meter CT3 Apparent Power' >> 0.2 VA
+[18:37:29.442][S][sensor]: 'energy_meter Freq A' >> 60.0 Hz
+[18:37:36.328][S][sensor]: 'energy_meter CT4 Amps' >> 0.00 A
+[18:37:36.329][S][sensor]: 'energy_meter CT4 Watts' >> 0.00 W
+[18:37:36.329][S][sensor]: 'energy_meter CT4 Power Factor' >> 0.00 
+[18:37:36.329][S][sensor]: 'energy_meter CT4 Reactive Power' >> -0.0 var
+[18:37:36.329][S][sensor]: 'energy_meter CT4 Apparent Power' >> 0.2 VA
+[18:37:36.329][S][sensor]: 'energy_meter CT5 Amps' >> 0.00 A
+[18:37:36.329][S][sensor]: 'energy_meter CT5 Watts' >> 0.01 W
+[18:37:36.329][S][sensor]: 'energy_meter CT5 Power Factor' >> 0.02 
+[18:37:36.329][S][sensor]: 'energy_meter CT5 Reactive Power' >> 0.0 var
+[18:37:36.329][S][sensor]: 'energy_meter CT5 Apparent Power' >> 0.2 VA
+[18:37:36.330][S][sensor]: 'energy_meter CT6 Amps' >> 0.67 A
+[18:37:36.330][S][sensor]: 'energy_meter CT6 Watts' >> 79.85 W
+[18:37:36.330][S][sensor]: 'energy_meter CT6 Power Factor' >> 0.98 
+[18:37:36.330][S][sensor]: 'energy_meter CT6 Reactive Power' >> -16.2 var
+[18:37:36.330][S][sensor]: 'energy_meter CT6 Apparent Power' >> 81.6 VA
+[18:37:36.330][S][sensor]: 'energy_meter Freq B' >> 60.0 Hz
+[18:37:38.785][S][sensor]: 'energy_meter Total Amps' >> 0.67 A
+[18:37:39.449][S][sensor]: 'energy_meter Total kWh' >> 0.066 kWh
+[18:37:39.450][S][sensor]: 'energy_meter Total Watts' >> 79.9 W
+[18:37:39.450][S][sensor]: 'energy_meter Volts A' >> 122.4 V
+[18:37:39.450][S][sensor]: 'energy_meter CT1 Amps' >> 0.00 A
+[18:37:39.451][S][sensor]: 'energy_meter CT1 Watts' >> -0.01 W
+[18:37:39.451][S][sensor]: 'energy_meter CT1 Power Factor' >> -0.04 
+[18:37:39.451][S][sensor]: 'energy_meter CT1 Reactive Power' >> 0.0 var
+[18:37:39.452][S][sensor]: 'energy_meter CT1 Apparent Power' >> 0.2 VA
+[18:37:39.452][S][sensor]: 'energy_meter CT2 Amps' >> 0.00 A
+[18:37:39.453][S][sensor]: 'energy_meter CT2 Watts' >> -0.01 W
+[18:37:39.455][S][sensor]: 'energy_meter CT2 Power Factor' >> -0.03 
+[18:37:39.455][S][sensor]: 'energy_meter CT2 Reactive Power' >> -0.0 var
+[18:37:39.455][S][sensor]: 'energy_meter CT2 Apparent Power' >> 0.2 VA
+[18:37:39.455][S][sensor]: 'energy_meter CT3 Amps' >> 0.00 A
+[18:37:39.455][S][sensor]: 'energy_meter CT3 Watts' >> 0.01 W
+[18:37:39.455][S][sensor]: 'energy_meter CT3 Power Factor' >> 0.03 
+[18:37:39.456][S][sensor]: 'energy_meter CT3 Reactive Power' >> 0.0 var
+[18:37:39.456][S][sensor]: 'energy_meter CT3 Apparent Power' >> 0.2 VA
+[18:37:39.456][S][sensor]: 'energy_meter Freq A' >> 60.0 Hz
+[18:37:46.369][S][sensor]: 'energy_meter CT4 Amps' >> 0.00 A
+[18:37:46.370][S][sensor]: 'energy_meter CT4 Watts' >> -0.00 W
+[18:37:46.371][S][sensor]: 'energy_meter CT4 Power Factor' >> -0.00 
+[18:37:46.371][S][sensor]: 'energy_meter CT4 Reactive Power' >> -0.0 var
+[18:37:46.371][S][sensor]: 'energy_meter CT4 Apparent Power' >> 0.2 VA
+[18:37:46.372][S][sensor]: 'energy_meter CT5 Amps' >> 0.00 A
+[18:37:46.374][S][sensor]: 'energy_meter CT5 Watts' >> 0.00 W
+[18:37:46.374][S][sensor]: 'energy_meter CT5 Power Factor' >> 0.00 
+[18:37:46.375][S][sensor]: 'energy_meter CT5 Reactive Power' >> -0.0 var
+[18:37:46.375][S][sensor]: 'energy_meter CT5 Apparent Power' >> 0.2 VA
+[18:37:46.376][S][sensor]: 'energy_meter CT6 Amps' >> 0.67 A
+[18:37:46.376][S][sensor]: 'energy_meter CT6 Watts' >> 79.87 W
+[18:37:46.376][S][sensor]: 'energy_meter CT6 Power Factor' >> 0.98 
+[18:37:46.376][S][sensor]: 'energy_meter CT6 Reactive Power' >> -16.3 var
+[18:37:46.377][S][sensor]: 'energy_meter CT6 Apparent Power' >> 81.6 VA
+[18:37:46.377][S][sensor]: 'energy_meter Freq B' >> 60.0 Hz
+[18:37:48.699][S][sensor]: 'energy_meter Total Amps' >> 0.67 A
+[18:37:49.437][S][sensor]: 'energy_meter Total kWh' >> 0.066 kWh
+[18:37:49.438][S][sensor]: 'energy_meter Total Watts' >> 79.9 W
+[18:37:49.439][S][sensor]: 'energy_meter Volts A' >> 122.6 V
+[18:37:49.439][S][sensor]: 'energy_meter CT1 Amps' >> 0.00 A
+[18:37:49.439][S][sensor]: 'energy_meter CT1 Watts' >> -0.00 W
+[18:37:49.440][S][sensor]: 'energy_meter CT1 Power Factor' >> -0.00 
+[18:37:49.440][S][sensor]: 'energy_meter CT1 Reactive Power' >> 0.0 var
+[18:37:49.440][S][sensor]: 'energy_meter CT1 Apparent Power' >> 0.2 VA
+[18:37:49.440][S][sensor]: 'energy_meter CT2 Amps' >> 0.00 A
+[18:37:49.441][S][sensor]: 'energy_meter CT2 Watts' >> 0.00 W
+[18:37:49.441][S][sensor]: 'energy_meter CT2 Power Factor' >> 0.00 
+[18:37:49.441][S][sensor]: 'energy_meter CT2 Reactive Power' >> -0.0 var
+[18:37:49.441][S][sensor]: 'energy_meter CT2 Apparent Power' >> 0.2 VA
+[18:37:49.442][S][sensor]: 'energy_meter CT3 Amps' >> 0.00 A
+[18:37:49.442][S][sensor]: 'energy_meter CT3 Watts' >> 0.00 W
+[18:37:49.442][S][sensor]: 'energy_meter CT3 Power Factor' >> 0.01 
+[18:37:49.442][S][sensor]: 'energy_meter CT3 Reactive Power' >> -0.0 var
+[18:37:49.443][S][sensor]: 'energy_meter CT3 Apparent Power' >> 0.2 VA
+[18:37:49.443][S][sensor]: 'energy_meter Freq A' >> 60.0 Hz
+[18:37:56.287][S][sensor]: 'energy_meter CT4 Amps' >> 0.00 A
+[18:37:56.288][S][sensor]: 'energy_meter CT4 Watts' >> -0.00 W
+[18:37:56.288][S][sensor]: 'energy_meter CT4 Power Factor' >> -0.00 
+[18:37:56.288][S][sensor]: 'energy_meter CT4 Reactive Power' >> -0.0 var
+[18:37:56.289][S][sensor]: 'energy_meter CT4 Apparent Power' >> 0.2 VA
+[18:37:56.289][S][sensor]: 'energy_meter CT5 Amps' >> 0.00 A
+[18:37:56.289][S][sensor]: 'energy_meter CT5 Watts' >> 0.00 W
+[18:37:56.289][S][sensor]: 'energy_meter CT5 Power Factor' >> 0.01 
+[18:37:56.290][S][sensor]: 'energy_meter CT5 Reactive Power' >> -0.0 var
+[18:37:56.290][S][sensor]: 'energy_meter CT5 Apparent Power' >> 0.2 VA
+[18:37:56.290][S][sensor]: 'energy_meter CT6 Amps' >> 0.67 A
+[18:37:56.290][S][sensor]: 'energy_meter CT6 Watts' >> 79.77 W
+[18:37:56.291][S][sensor]: 'energy_meter CT6 Power Factor' >> 0.98 
+[18:37:56.291][S][sensor]: 'energy_meter CT6 Reactive Power' >> -16.3 var
+[18:37:56.291][S][sensor]: 'energy_meter CT6 Apparent Power' >> 81.5 VA
+[18:37:56.291][S][sensor]: 'energy_meter Freq B' >> 60.0 Hz
+[18:37:58.773][S][sensor]: 'energy_meter Total Amps' >> 0.67 A
+[18:37:59.239][S][sensor]: 'energy_meter WiFi' >> -55 dBm
+[18:37:59.452][S][sensor]: 'energy_meter Total kWh' >> 0.066 kWh
+[18:37:59.452][S][sensor]: 'energy_meter Total Watts' >> 79.8 W
+[18:37:59.452][S][sensor]: 'energy_meter Volts A' >> 122.7 V
+[18:37:59.452][S][sensor]: 'energy_meter CT1 Amps' >> 0.00 A
+[18:37:59.452][S][sensor]: 'energy_meter CT1 Watts' >> -0.01 W
+[18:37:59.452][S][sensor]: 'energy_meter CT1 Power Factor' >> -0.05 
+[18:37:59.452][S][sensor]: 'energy_meter CT1 Reactive Power' >> -0.0 var
+[18:37:59.453][S][sensor]: 'energy_meter CT1 Apparent Power' >> 0.2 VA
+[18:37:59.453][S][sensor]: 'energy_meter CT2 Amps' >> 0.00 A
+[18:37:59.453][S][sensor]: 'energy_meter CT2 Watts' >> 0.00 W
+[18:37:59.453][S][sensor]: 'energy_meter CT2 Power Factor' >> 0.01 
+[18:37:59.453][S][sensor]: 'energy_meter CT2 Reactive Power' >> -0.0 var
+[18:37:59.453][S][sensor]: 'energy_meter CT2 Apparent Power' >> 0.2 VA
+[18:37:59.453][S][sensor]: 'energy_meter CT3 Amps' >> 0.00 A
+[18:37:59.453][S][sensor]: 'energy_meter CT3 Watts' >> -0.00 W
+[18:37:59.453][S][sensor]: 'energy_meter CT3 Power Factor' >> -0.01 
+[18:37:59.454][S][sensor]: 'energy_meter CT3 Reactive Power' >> -0.0 var
+[18:37:59.454][S][sensor]: 'energy_meter CT3 Apparent Power' >> 0.2 VA
+[18:37:59.454][S][sensor]: 'energy_meter Freq A' >> 60.0 Hz
+[18:38:06.276][S][sensor]: 'energy_meter CT4 Amps' >> 0.00 A
+[18:38:06.277][S][sensor]: 'energy_meter CT4 Watts' >> -0.00 W
+[18:38:06.277][S][sensor]: 'energy_meter CT4 Power Factor' >> -0.02 
+[18:38:06.277][S][sensor]: 'energy_meter CT4 Reactive Power' >> -0.0 var
+[18:38:06.277][S][sensor]: 'energy_meter CT4 Apparent Power' >> 0.2 VA
+[18:38:06.277][S][sensor]: 'energy_meter CT5 Amps' >> 0.00 A
+[18:38:06.278][S][sensor]: 'energy_meter CT5 Watts' >> -0.00 W
+[18:38:06.278][S][sensor]: 'energy_meter CT5 Power Factor' >> -0.01 
+[18:38:06.278][S][sensor]: 'energy_meter CT5 Reactive Power' >> -0.0 var
+[18:38:06.278][S][sensor]: 'energy_meter CT5 Apparent Power' >> 0.2 VA
+[18:38:06.278][S][sensor]: 'energy_meter CT6 Amps' >> 0.67 A
+[18:38:06.278][S][sensor]: 'energy_meter CT6 Watts' >> 80.00 W
+[18:38:06.278][S][sensor]: 'energy_meter CT6 Power Factor' >> 0.98 
+[18:38:06.279][S][sensor]: 'energy_meter CT6 Reactive Power' >> -16.5 var
+[18:38:06.279][S][sensor]: 'energy_meter CT6 Apparent Power' >> 81.8 VA
+[18:38:06.279][S][sensor]: 'energy_meter Freq B' >> 60.0 Hz
+[18:38:08.697][S][sensor]: 'energy_meter Total Amps' >> 0.67 A
+[18:38:09.505][S][sensor]: 'energy_meter Total kWh' >> 0.066 kWh
+[18:38:09.506][S][sensor]: 'energy_meter Total Watts' >> 80.0 W
+[18:38:09.507][S][sensor]: 'energy_meter Volts A' >> 122.8 V
+[18:38:09.507][S][sensor]: 'energy_meter CT1 Amps' >> 0.00 A
+[18:38:09.509][S][sensor]: 'energy_meter CT1 Watts' >> -0.00 W
+[18:38:09.509][S][sensor]: 'energy_meter CT1 Power Factor' >> -0.00 
+[18:38:09.510][S][sensor]: 'energy_meter CT1 Reactive Power' >> -0.0 var
+[18:38:09.510][S][sensor]: 'energy_meter CT1 Apparent Power' >> 0.2 VA
+[18:38:09.511][S][sensor]: 'energy_meter CT2 Amps' >> 0.00 A
+[18:38:09.511][S][sensor]: 'energy_meter CT2 Watts' >> 0.01 W
+[18:38:09.511][S][sensor]: 'energy_meter CT2 Power Factor' >> 0.02 
+[18:38:09.512][S][sensor]: 'energy_meter CT2 Reactive Power' >> -0.0 var
+[18:38:09.512][S][sensor]: 'energy_meter CT2 Apparent Power' >> 0.2 VA
+[18:38:09.512][S][sensor]: 'energy_meter CT3 Amps' >> 0.00 A
+[18:38:09.513][S][sensor]: 'energy_meter CT3 Watts' >> -0.01 W
+[18:38:09.513][S][sensor]: 'energy_meter CT3 Power Factor' >> -0.04 
+[18:38:09.513][S][sensor]: 'energy_meter CT3 Reactive Power' >> 0.0 var
+[18:38:09.513][S][sensor]: 'energy_meter CT3 Apparent Power' >> 0.2 VA
+[18:38:09.513][S][sensor]: 'energy_meter Freq A' >> 60.0 Hz
+[18:38:16.273][S][sensor]: 'energy_meter CT4 Amps' >> 0.00 A
+[18:38:16.273][S][sensor]: 'energy_meter CT4 Watts' >> 0.00 W
+[18:38:16.274][S][sensor]: 'energy_meter CT4 Power Factor' >> 0.01 
+[18:38:16.275][S][sensor]: 'energy_meter CT4 Reactive Power' >> -0.0 var
+[18:38:16.275][S][sensor]: 'energy_meter CT4 Apparent Power' >> 0.2 VA
+[18:38:16.277][S][sensor]: 'energy_meter CT5 Amps' >> 0.00 A
+[18:38:16.277][S][sensor]: 'energy_meter CT5 Watts' >> 0.00 W
+[18:38:16.278][S][sensor]: 'energy_meter CT5 Power Factor' >> 0.02 
+[18:38:16.278][S][sensor]: 'energy_meter CT5 Reactive Power' >> -0.0 var
+[18:38:16.279][S][sensor]: 'energy_meter CT5 Apparent Power' >> 0.2 VA
+[18:38:16.279][S][sensor]: 'energy_meter CT6 Amps' >> 0.67 A
+[18:38:16.279][S][sensor]: 'energy_meter CT6 Watts' >> 79.97 W
+[18:38:16.279][S][sensor]: 'energy_meter CT6 Power Factor' >> 0.98 
+[18:38:16.280][S][sensor]: 'energy_meter CT6 Reactive Power' >> -16.5 var
+[18:38:16.280][S][sensor]: 'energy_meter CT6 Apparent Power' >> 81.8 VA
+[18:38:16.280][S][sensor]: 'energy_meter Freq B' >> 60.0 Hz
+[18:38:18.721][S][sensor]: 'energy_meter Total Amps' >> 0.67 A
+[18:38:19.542][S][sensor]: 'energy_meter Total kWh' >> 0.067 kWh
+[18:38:19.543][S][sensor]: 'energy_meter Total Watts' >> 80.0 W
+[18:38:19.543][S][sensor]: 'energy_meter Volts A' >> 122.8 V
+[18:38:19.543][S][sensor]: 'energy_meter CT1 Amps' >> 0.00 A
+[18:38:19.543][S][sensor]: 'energy_meter CT1 Watts' >> -0.00 W
+[18:38:19.543][S][sensor]: 'energy_meter CT1 Power Factor' >> -0.00 
+[18:38:19.543][S][sensor]: 'energy_meter CT1 Reactive Power' >> 0.0 var
+[18:38:19.543][S][sensor]: 'energy_meter CT1 Apparent Power' >> 0.2 VA
+[18:38:19.543][S][sensor]: 'energy_meter CT2 Amps' >> 0.00 A
+[18:38:19.543][S][sensor]: 'energy_meter CT2 Watts' >> -0.01 W
+[18:38:19.544][S][sensor]: 'energy_meter CT2 Power Factor' >> -0.03 
+[18:38:19.544][S][sensor]: 'energy_meter CT2 Reactive Power' >> -0.0 var
+[18:38:19.544][S][sensor]: 'energy_meter CT2 Apparent Power' >> 0.2 VA
+[18:38:19.544][S][sensor]: 'energy_meter CT3 Amps' >> 0.00 A
+[18:38:19.544][S][sensor]: 'energy_meter CT3 Watts' >> 0.01 W
+[18:38:19.544][S][sensor]: 'energy_meter CT3 Power Factor' >> 0.03 
+[18:38:19.544][S][sensor]: 'energy_meter CT3 Reactive Power' >> -0.0 var
+[18:38:19.544][S][sensor]: 'energy_meter CT3 Apparent Power' >> 0.2 VA
+[18:38:19.544][S][sensor]: 'energy_meter Freq A' >> 60.0 Hz
