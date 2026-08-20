@@ -1,7 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+from pathlib import Path
 
-data = pd.read_csv("fan_test_summary.csv")
+data_dir = Path(__file__).resolve().parent
+output_path = data_dir.parent / "docs" / "assets" / "fan_test_results.png"
+data = pd.read_csv(data_dir / "fan_test_summary.csv")
 labels = ["Off", "Speed 1", "Speed 2", "Speed 3"]
 
 fig, axes = plt.subplots(2, 1, figsize=(9, 8))
@@ -27,5 +30,5 @@ axes[1].set_ylim(0.90, 1.02)
 axes[1].grid(True, alpha=0.3)
 
 plt.tight_layout()
-plt.savefig("fan_test_results.png", dpi=300)
+plt.savefig(output_path, dpi=300)
 plt.show()

@@ -1,318 +1,131 @@
-\# Six-Channel AC Energy Monitor
+# Six-Channel Whole-Home Energy Monitor
 
+An end-to-end residential energy-monitoring system built around an ESP32 and a dual-ATM90E32 six-channel metering board. The completed system is installed at the electrical panel, records circuit telemetry continuously, stores time-series data on a Raspberry Pi, and exposes a remotely accessible Grafana dashboard.
 
+![Tower-fan calibration results](docs/assets/fan_test_results.png)
 
-ESP32-based AC energy monitor using a CircuitSetup six-channel ATM90E32 board and split-core current transformers.
+## What I built
 
+- Installed two split-core CTs on the incoming 120/240 V service conductors and four CTs on selected branch circuits
+- Measured RMS current and voltage, real/reactive/apparent power, power factor, frequency, and energy
+- Calibrated voltage and each CT family against handheld reference instruments
+- Published ESP32 telemetry over MQTT every 10 seconds
+- Hosted MQTT ingestion, InfluxDB, and Grafana continuously on a Raspberry Pi using Docker
+- Built a dashboard for per-channel measurements, whole-home power, and historical trends
+- Added secure remote dashboard access with Tailscale
+- Demonstrated remote ESPHome OTA updates by tunneling through the Raspberry Pi
 
+## System architecture
 
-\## Features
+```mermaid
+flowchart TD
+    A["2 service CTs + 4 branch CTs"] --> B["Dual ATM90E32 metering board"]
+    C["9 VAC voltage reference"] --> B
+    B --> D["ESP32 + ESPHome"]
+    D -->|MQTT over Wi-Fi| E["Raspberry Pi / Docker"]
+    E --> F["InfluxDB time-series storage"]
+    F --> G["Grafana dashboards"]
+    G --> H["Local or Tailscale access"]
+```
 
+See [Architecture](docs/architecture.md) for the data path and design decisions.
 
+## Hardware
 
-\- Six current-measurement channels
+| Component | Function |
+|---|---|
+| ESP32 DevKitC | Firmware host, networking, MQTT, and OTA |
+| CircuitSetup six-channel board | Two ATM90E32 metering ICs and CT interfaces |
+| 2× SCT-016, 120 A/40 mA | Main service conductors (CT1 and CT2) |
+| 4× SCT-013-000, 100 A/50 mA | Selected branch circuits (CT3 through CT6) |
+| 9 VAC AC-AC adapter | Isolated line-voltage waveform reference |
+| Raspberry Pi | Always-on Docker host for the monitoring stack |
+| Clamp meter and multimeter | Calibration references |
 
-\- RMS voltage and current
+## Software stack
 
-\- Real power (W)
+| Layer | Technology |
+|---|---|
+| Embedded firmware | ESPHome |
+| Metering interface | ATM90E32 over SPI |
+| Telemetry transport | MQTT |
+| Ingestion | Telegraf |
+| Time-series database | InfluxDB |
+| Visualization | Grafana |
+| Deployment | Docker on Raspberry Pi |
+| Remote access | Tailscale |
 
-\- Reactive power (VAR)
+## Calibration results
 
-\- Apparent power (VA)
+### Branch-circuit CTs
 
-\- Power factor
+The SCT-013-000 gain was calibrated with a tower fan at three steady operating points. The gain changed from `27518` to `28646`.
 
-\- 60 Hz line-frequency measurement
-
-\- Total current, total real power, and daily energy
-
-\- Live ESPHome web interface
-
-\- OTA firmware updates
-
-
-
-\## Hardware
-
-
-
-\- CircuitSetup six-channel energy-meter board
-
-\- 2× ATM90E32 metering ICs
-
-\- ESP32 DevKitC
-
-\- 4× SCT-013-000 100 A/50 mA CTs
-
-\- 2× SCT-016 120 A/40 mA CTs reserved for mains monitoring
-
-\- 9 VAC voltage-reference adapter
-
-\- Clamp meter
-
-\- AC line splitter
-
-\- Tower fan test load
-
-
-
-\## Architecture
-
-
-
-The CT supplies a scaled current waveform, while the 9 VAC adapter supplies a safe, scaled representation of the AC voltage waveform. The ATM90E32 samples both signals and calculates electrical quantities. The ESP32 reads the metering ICs over SPI and publishes measurements through ESPHome.
-
-
-
-\## Calibration
-
-
-
-\### Current
-
-
-
-The SCT-013-000 was compared with a clamp meter at three tower-fan speeds.
-
-
-
-Initial measurements:
-
-
-
-| Speed | Clamp meter | Energy Monitor | Error |
-
+| Fan setting | Clamp meter | Before calibration | Initial error |
 |---|---:|---:|---:|
+| Speed 1 | 0.660 A | 0.630 A | -4.5% |
+| Speed 2 | 0.740 A | 0.710 A | -4.1% |
+| Speed 3 | 0.885 A | 0.855 A | -3.4% |
 
-| 3 | 0.885 A | 0.855 A | -3.4% |
+After calibration, the monitor matched the clamp meter at the displayed 0.01 A resolution across the three test points.
 
-| 2 | 0.740 A | 0.710 A | -4.1% |
+### Main-service CTs
 
-| 1 | 0.660 A | 0.630 A | -4.5% |
+The two SCT-016 sensors were calibrated individually after installation under higher household loads.
 
+| Channel | Monitor before correction | Clamp reference | Final gain |
+|---|---:|---:|---:|
+| CT1 trial 1 | 18.37 A | 27.49 A | `62250` |
+| CT1 trial 2 | 23.40 A | 34.69 A | `62250` |
+| CT2 | 4.78 A | 6.76 A | `59095` |
 
+### Voltage
 
-The current calibration gain was changed from:
+The voltage gain changed from `7305` to `6921`, correcting the monitor from 129.3 V to approximately 122.6–122.7 V against a 122.5 V reference.
 
+The full method and calculations are in [Calibration](docs/calibration.md). Raw tower-fan samples and the processed CSV are retained in [`data/`](data/).
 
+## Final system status
 
-```yaml
+As of August 2026, the monitor is:
 
-current\_cal: '27518'
+- physically installed and operating continuously
+- reporting all six channels with correct CT polarity
+- storing measurements in InfluxDB
+- displaying live and historical data in Grafana
+- accessible remotely through a private Tailscale network
+- remotely updateable through an SSH tunnel to the Raspberry Pi
 
-to:
+## Repository contents
 
+| Path | Contents |
+|---|---|
+| [`energy_meter.yaml`](energy_meter.yaml) | Sanitized active ESPHome configuration |
+| [`secrets.example.yaml`](secrets.example.yaml) | Credential template; no real secrets |
+| [`docs/architecture.md`](docs/architecture.md) | System and data-flow design |
+| [`docs/calibration.md`](docs/calibration.md) | Reference measurements and gain calculations |
+| [`docs/installation.md`](docs/installation.md) | Installation design and safety boundaries |
+| [`docs/backend.md`](docs/backend.md) | Raspberry Pi, Docker, data, and remote access overview |
+| [`build-log.md`](build-log.md) | Chronological engineering build log |
+| [`data/`](data/) | Bench-test source data and analysis script |
 
+## Reproducing the firmware configuration
 
-current\_cal: '28646'
+1. Install ESPHome.
+2. Copy `secrets.example.yaml` to `secrets.yaml`.
+3. Replace every placeholder locally. `secrets.yaml` is intentionally ignored by Git.
+4. Validate the configuration:
 
-After calibration, the monitor matched the clamp meter to the displayed 0.01 A resolution at all three speeds.
+   ```bash
+   esphome config energy_meter.yaml
+   ```
 
+5. Compile and upload only after adapting the calibration constants, network settings, and channel assignments to the target hardware.
 
+## Safety
 
-All six board inputs were validated using the same SCT. Four individual SCT-013-000 sensors were then compared, with measurements remaining within approximately 4% of the clamp-meter reference.
+This repository documents a personal engineering project; it is not an installation guide for energized electrical equipment. Service conductors can remain energized even when the main breaker is open. Work in or around a panel should be performed only by a qualified person using applicable codes, permits, protective equipment, and manufacturer instructions. Split-core CT secondaries must never be left open while clamped around an energized conductor unless the CT is specifically designed to be safe in that condition.
 
+## Author
 
-
-Voltage
-
-
-
-Reference comparison:
-
-
-
-Clamp meter: 122.5 V
-
-Energy Monitor before calibration: 129.3 V
-
-Error: +5.55%
-
-
-
-The voltage calibration gain was changed from:
-
-
-
-voltage\_cal: '7305'
-
-
-
-to:
-
-
-
-voltage\_cal: '6921'
-
-
-
-After calibration, the monitor reported 122.6–122.7 V.
-
-
-
-Tower-Fan Experiment
-
-
-
-Measurements were logged at 10-second intervals.
-
-
-
-Condition	Current	Real Power	Reactive Power	Apparent Power	PF
-
-Fan off	0.08 A	-0.07 W	-9.90 VAR	10.02 VA	N/A
-
-Speed 1	0.67 A	80.00 W	-16.20 VAR	81.80 VA	0.98
-
-Speed 2	0.74 A	90.63 W	-8.03 VAR	91.05 VA	1.00
-
-Speed 3	0.90 A	105.58 W	30.87 VAR	110.03 VA	0.96
-
-
-
-The results show that the fan's electrical behavior changes with its speed-control configuration. Speeds 1 and 2 appeared slightly capacitive, while speed 3 appeared inductive.
-
-
-
-Power-Triangle Verification
-
-
-
-The measurements satisfy approximately:
-
-
-
-S² = P² + Q²
-
-PF = P / S
-
-
-
-For speed 3:
-
-
-
-P = 105.58 W
-
-Q = 30.87 VAR
-
-S = 110.03 VA
-
-PF = 0.96
-
-Troubleshooting
-
-Current present but watts and frequency were zero
-
-
-
-Observed:
-
-
-
-Current: approximately 0.87 A
-
-Real power: approximately 0 W
-
-Frequency: 0 Hz
-
-
-
-Cause: the 9 VAC voltage-reference adapter was unplugged. The CT current path remained operational, but the meter had no voltage waveform for calculating frequency, phase relationship, or real power.
-
-
-
-Firmware calibration appeared unchanged
-
-
-
-Cause: duplicate YAML files existed in different directories. VS Code edited one copy while ESPHome compiled another.
-
-
-
-Solution: verified the exact build input using:
-
-
-
-findstr /n "current\_cal" energy\_meter.yaml
-
-
-
-The active configuration was confirmed as:
-
-
-
-C:\\energy-monitor\\energy\_meter.yaml
-
-No-load measurement floor
-
-
-
-With the fan off, CT6 reported approximately 0.08 A and 10 VA while real power remained near zero. Low-current VA, VAR, and PF readings therefore require thresholding or offset calibration.
-
-
-
-Files
-
-energy\_meter.yaml — active ESPHome configuration
-
-energy\_meter\_calibrated\_backup.yaml — known-good backup
-
-fan\_off\_baseline\_raw.txt — no-load log
-
-fan\_speed1\_raw.txt — fan speed 1 log
-
-fan\_speed2\_raw.txt — fan speed 2 log
-
-fan\_speed3\_raw.txt — fan speed 3 log
-
-fan\_test\_summary.csv — summarized results
-
-plot\_fan\_test.py — analysis and plotting script
-
-fan\_test\_results.png — generated results plot
-
-Safety
-
-
-
-CTs were installed only around single insulated conductors during bench testing. No work was performed on exposed energized conductors. Panel installation should be completed only using appropriate PPE, procedures, and qualified supervision.
-
-
-
-Current Status
-
-
-
-Completed:
-
-
-
-Six-channel functional validation
-
-Current calibration
-
-Voltage calibration
-
-Individual SCT comparison
-
-Real, reactive, and apparent-power measurements
-
-Power-factor testing
-
-Raw data logging
-
-Python visualization
-
-
-
-Not yet completed:
-
-
-
-SCT-016 mains-CT calibration
-
-Electrical-panel installation
-
-Long-term time-series database and dashboard deployment
-
+Daniel Joseph — Electrical Engineering student, University of Florida
