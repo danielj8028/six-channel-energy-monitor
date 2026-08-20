@@ -2,7 +2,9 @@
 
 An end-to-end residential energy-monitoring system built around an ESP32 and a dual-ATM90E32 six-channel metering board. The completed system is installed at the electrical panel, records circuit telemetry continuously, stores time-series data on a Raspberry Pi, and exposes a remotely accessible Grafana dashboard.
 
-![Tower-fan calibration results](docs/assets/fan_test_results.png)
+![Live Grafana dashboard showing whole-home power, current, line voltage, frequency, and per-channel history](docs/assets/grafana-overview.png)
+
+*Live dashboard view: 383.5 W, 5.22 A, 122.6 V, and 60.0 Hz with per-channel power history.*
 
 ## What I built
 
@@ -29,6 +31,14 @@ flowchart TD
 ```
 
 See [Architecture](docs/architecture.md) for the data path and design decisions.
+
+## Live telemetry
+
+The dashboard separates the two service legs from the monitored upstairs heat, dryer, water-heater, and range circuits. In addition to current and real power, the lower panels expose power factor, reactive power, and apparent power for load-behavior analysis.
+
+![Grafana per-channel current, power factor, reactive power, and apparent power panels](docs/assets/grafana-channel-telemetry.png)
+
+The screenshot captures real household transitions at a 10-second refresh interval, including recurring upstairs-heat demand and a larger Main L1 step near the end of the window.
 
 ## Hardware
 
@@ -85,6 +95,8 @@ The voltage gain changed from `7305` to `6921`, correcting the monitor from 129.
 
 The full method and calculations are in [Calibration](docs/calibration.md). Raw tower-fan samples and the processed CSV are retained in [`data/`](data/).
 
+![Tower-fan calibration results across off and three speed settings](docs/assets/fan_test_results.png)
+
 ## Final system status
 
 As of August 2026, the monitor is:
@@ -95,6 +107,12 @@ As of August 2026, the monitor is:
 - displaying live and historical data in Grafana
 - accessible remotely through a private Tailscale network
 - remotely updateable through an SSH tunnel to the Raspberry Pi
+
+## Physical commissioning
+
+The photo below documents the exterior commissioning configuration: six CT leads exit the panel and connect to the ESP32/ATM90E32 assembly while the isolated 9 VAC reference is powered from the adjacent receptacle. The exposed-board arrangement shown here was used for commissioning and validation; a covered enclosure and secured cable routing are the appropriate final mechanical configuration.
+
+![Electrical panel and externally mounted six-channel metering assembly during commissioning](docs/assets/panel-commissioning.jpg)
 
 ## Repository contents
 

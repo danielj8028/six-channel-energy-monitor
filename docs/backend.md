@@ -15,6 +15,12 @@ The ESP32 publishes a new measurement set every 10 seconds. The system continues
 
 Grafana panels display line voltage, frequency, CT current, real power, reactive power, apparent power, power factor, total energy, and time trends. Low-current power-factor and reactive-power values should be interpreted cautiously because noise is significant relative to the measured signal.
 
+![Grafana overview with live electrical measurements and per-channel real-power trends](assets/grafana-overview.png)
+
+![Grafana channel-current, power-factor, reactive-power, and apparent-power panels](assets/grafana-channel-telemetry.png)
+
+These views also serve as the visible query layer over the measurements retained in InfluxDB: Grafana reads the historical series and renders synchronized per-channel trends over the selected time window.
+
 ## Remote access
 
 Tailscale provides encrypted private-network access to the Raspberry Pi and Grafana without publishing Grafana directly to the internet. Authorized devices can reach the dashboard using the Pi hostname while Tailscale is connected.

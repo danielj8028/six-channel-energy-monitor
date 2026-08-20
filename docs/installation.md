@@ -2,7 +2,11 @@
 
 ## Installed configuration
 
-The completed system uses two SCT-016 split-core sensors for the two incoming service conductors and four SCT-013-000 sensors for selected branch circuits. CT polarity was verified from the sign of real power. The ESP32 and metering board are housed separately from energized conductors, while CT leads route from the panel to the enclosure.
+The completed system uses two SCT-016 split-core sensors for the two incoming service conductors and four SCT-013-000 sensors for selected branch circuits. CT polarity was verified from the sign of real power. The ESP32 and metering board remain outside the panel, while CT leads route through the panel boundary to the measurement assembly.
+
+![Exterior panel and six-channel metering assembly during commissioning](assets/panel-commissioning.jpg)
+
+The photograph shows the commissioning configuration used to validate all six installed CTs. The board is intentionally identified as exposed commissioning hardware rather than presented as a finished enclosure; long-term deployment should use a covered enclosure, strain relief, and secured cable routing appropriate to the environment.
 
 The 9 VAC adapter serves two functions: it powers the measurement assembly and provides the isolated voltage waveform used for phase-sensitive power calculations. If it is disconnected, a CT may still indicate current while voltage, frequency, and real-power calculations become unavailable or invalid.
 
