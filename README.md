@@ -146,4 +146,4 @@ This repository documents a personal engineering project; it is not an installat
 
 ## Author
 
-Daniel Joseph — Electrical Engineering student, University of Florida
+Daniel Joseph - Electrical Engineering student, University of Florida
