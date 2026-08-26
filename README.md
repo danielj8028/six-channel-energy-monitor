@@ -32,6 +32,14 @@ flowchart TD
 
 See [Architecture](docs/architecture.md) for the data path and design decisions.
 
+## AutoCAD electrical documentation
+
+The installed system is documented with an AutoCAD single-line drawing covering the 120/240 VAC utility service, residential load center, main and branch CT placement, isolated 9 VAC voltage reference, ATM90E32 metering board, ESP32/MQTT link, and Raspberry Pi telemetry backend.
+
+[![AutoCAD single-line diagram for the six-channel energy monitor](docs/assets/energy-monitor-single-line.png)](docs/cad/energy-monitor-single-line.pdf)
+
+View the [full-resolution PDF](docs/cad/energy-monitor-single-line.pdf) or download the editable [AutoCAD DWG source](docs/cad/energy-monitor-single-line.dwg).
+
 ## Live telemetry
 
 The dashboard separates the two service legs from the monitored upstairs heat, dryer, water-heater, and range circuits. In addition to current and real power, the lower panels expose power factor, reactive power, and apparent power for load-behavior analysis.
@@ -124,6 +132,7 @@ The photo below documents the exterior commissioning configuration: six CT leads
 | [`docs/calibration.md`](docs/calibration.md) | Reference measurements and gain calculations |
 | [`docs/installation.md`](docs/installation.md) | Installation design and safety boundaries |
 | [`docs/backend.md`](docs/backend.md) | Raspberry Pi, Docker, data, and remote access overview |
+| [`docs/cad/`](docs/cad/) | AutoCAD DWG source and plotted PDF single-line diagram |
 | [`build-log.md`](build-log.md) | Chronological engineering build log |
 | [`data/`](data/) | Bench-test source data and analysis script |
 

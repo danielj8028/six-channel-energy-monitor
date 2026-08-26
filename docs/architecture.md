@@ -1,5 +1,14 @@
 # Architecture
 
+## Electrical single-line drawing
+
+The project includes an AutoCAD drawing that connects the electrical installation to the telemetry architecture. It documents the 120/240 VAC service, CT1 and CT2 on the two main service legs, CT3 through CT6 on selected branch circuits, the isolated voltage-reference transformer, the ATM90E32 metering board, ESP32, MQTT transport, and Raspberry Pi-hosted InfluxDB/Grafana stack.
+
+[![AutoCAD single-line diagram](assets/energy-monitor-single-line.png)](cad/energy-monitor-single-line.pdf)
+
+- [Full-resolution PDF](cad/energy-monitor-single-line.pdf)
+- [Editable AutoCAD DWG](cad/energy-monitor-single-line.dwg)
+
 ## Measurement path
 
 Each split-core current transformer produces a scaled waveform proportional to conductor current. A 9 VAC adapter provides an isolated representation of line voltage. Two ATM90E32 metering ICs sample these signals and calculate RMS current, RMS voltage, real power, reactive power, apparent power, power factor, and frequency.
